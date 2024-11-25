@@ -1,0 +1,68 @@
+@media screen and (max-width: 800px) {
+body{font-size: 16px};
+}
+
+@media screen and (min-width: 801px) {
+body{font-size: 19px};
+}
+body{
+background-color: black;
+
+color:white;
+font-family: Calibri;
+
+}
+
+a{
+text-decoration: none;
+color:#00baff;
+}
+
+/* Añadir estilos para el formulario */
+form {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente (si se necesita) */
+    margin: 20px 0; /* Margen opcional para separación */
+}
+
+/* El resto de tus estilos sigue igual */
+.buscar {
+    display: flex; /* Utiliza flexbox para alinear los elementos */
+    width: 80%;
+
+}
+
+.search {
+    width: 100%;
+    border: 1px solid #ccc; /* Un borde para el input */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 4px 0 0 4px; /* Esquinas redondeadas en el lado izquierdo */
+    outline: none;
+    text-align: center;
+}
+
+button {
+    border: 1px solid #ccc; /* Un borde para el botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 15px; /* Espaciado interno del botón */
+    border-radius: 0 4px 4px 0; /* Esquinas redondeadas en el lado derecho */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color al pasar el ratón sobre el botón */
+}
+
+.download{
+	border:none;
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border-radius:4px;
+
+}
+
+.download:hover{
+	 background-color: #0056b3;
+}

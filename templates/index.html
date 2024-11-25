@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+ <title>Music Downloader</title>
+</head>
+<body>
+<center>
+ <form method="POST">
+  <div class="buscar">
+<input class="search" type="text" id="query" name="query" placeholder="Nombre de la cancion o cantante" autocomplete="off" required>
+<button type="submit">Buscar</button>
+  </div>
+ </form>
+ <p>
+  {% for titulo, link, duracion, miniatura in informacion %}
+ <strong>{{ titulo }}</strong> - {{ duracion }}<p>
+ <img src="{{ miniatura }}" alt="Portada"><br>
+ <form method="POST">
+  <input type="hidden" name="link" value="{{ link }}">
+  <button class="download" type="submit">Descargar</button>
+ </form>
+  {% endfor %}<p>
+</center>
+</body>
+</html>
